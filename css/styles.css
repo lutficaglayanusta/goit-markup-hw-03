@@ -10,28 +10,40 @@ body{
     line-height: 1.5;
     background-color: #FFFFFF;
 }
+img{
+    display: block;
+}
+
+.header{
+    border-bottom: 1px solid #e7e9fc ;
+}
 .container{
+    display: flex;
     max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
+    align-items: center;
 }
-header{
+.header .container .navbar{
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    
 }
-nav{
+.header .container .nav-menu{
     display: flex;
-    margin-left: 10px;
-}
-nav ul{
-    display: flex;
-    list-style-type: none;
-    margin-left: 10px;
-}
-nav ul li{
-    margin: 0px 10px;
-}
-address ul{
-    display: flex;
+    gap: 40px;
     list-style: none;
+}
+.header .container .nav-menu .nav-same{
+    padding: 24px 0;
+}
+
+.address .address-contact{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
 }
 
 a{
@@ -44,40 +56,43 @@ a{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 .text{
     color: #2e2f42;
 }
-nav .studio{
+.navbar .studio{
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.02em;
     color: #2e2f42;
 }
-nav .studio:hover{
+.navbar .studio:hover{
     color: #404bbf ;
 }
-nav .studio:focus{
+.navbar .studio:focus{
     color:#404bbf;
 }
-header .address{
+.header .address{
     font-style: normal;
 }
-header .address .address-info{
+.header .address .address-info{
     font-size: 16px;
     letter-spacing: 0.02em;
     color: #434455;
 }
-header .address .address-info:hover{
+.header .address .address-info:hover{
     color: #404bbf;
 }
-header .address .address-info:focus{
+.header .address .address-info:focus{
     color: #404bbf;
 }
 
 
 .effective{
     background-color: rgb(46, 47, 66);
+    padding: 188px 0;
+    
 }
 .effective .business{
     font-size: 56px;
@@ -85,14 +100,22 @@ header .address .address-info:focus{
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
+    max-width: 496px;
 }
 .effective .service{
-    background-color: #4D5AE5;
+    display: block;
+    background-color: #4d5ae5;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5 ;
     letter-spacing: 0.04em ;
     color: #ffffff;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .effective .service:hover{
@@ -103,12 +126,28 @@ header .address .address-info:focus{
     background-color: #404BBF;
     cursor: pointer;
 }
-.heading{
+.futures{
+    padding: 120px 0;
+    
+}
+.futures .visually-hidden{
+    visibility: hidden;
+}
+.futures .futures-property{
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+.futures .futures-property .futures-item{
+    width: calc((100% - 72px) / 4);
+}
+.futures .futures-property .futures-item .heading{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .paragh{
     font-size: 16px;
@@ -118,6 +157,7 @@ header .address .address-info:focus{
 
 .team{
     background-color: rgb(244, 244, 253);
+    padding: 120px 0;
 }
 .team .our-team{
     font-size: 36px;
@@ -126,29 +166,63 @@ header .address .address-info:focus{
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
-.team .member{
+.team .team-member{
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+.team .team-member .member{
     background-color: #FFFFFF;
+    flex-basis: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
-.team .member .member-person{
+.team .team-member .member .member-info{
+    padding: 32px 0;
+}
+.team .member .member-info .member-person{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px;
 }
-.team .member .member-description{
+.team .member .member-info .member-description{
     font-size: 16px;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
 }
-.our-portfolio{
+.portfolio{
+    padding: 120px 0;
+}
+.portfolio .our-portfolio{
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
+}
+.portfolio .portfolio-work{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.portfolio .portfolio-place{
+    flex-basis: calc((100% - 72px) / 4);
+}
+.portfolio .portfolio-work .portfolio-place .portfolio-rest{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
 }
 .portfolio .app{
     font-weight:500;
@@ -164,6 +238,12 @@ header .address .address-info:focus{
 }
 .footer{
     background-color: #2E2F42;
+    padding: 100px 0;
+
+}
+.footer .logo{
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .span{
     color: #2e2f42;
@@ -172,4 +252,5 @@ header .address .address-info:focus{
 .footer .info{
     color: #F4F4FD;
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
