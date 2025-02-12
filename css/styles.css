@@ -36,7 +36,7 @@ img{
     list-style: none;
 }
 .header .container .nav-menu .nav_same{
-    padding:24px 0;
+    padding: 24px 0;
 }
 
 .address .address-contact{
@@ -147,7 +147,7 @@ a{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 8px;
+    margin-bottom: 8px ;
 }
 .paragh{
     font-size: 16px;
@@ -242,7 +242,7 @@ a{
 
 }
 .footer .footer_second{
-    display:inline-block;
+    display: inline-block;
     margin-bottom: 16px;
     font-family: "Raleway",sans-serif;
     font-weight: 700;
