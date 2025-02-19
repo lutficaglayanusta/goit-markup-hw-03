@@ -250,7 +250,7 @@ a{
     padding: 100px 0;
 
 }
-.footer-logo{
+.footer_logo{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -258,12 +258,10 @@ a{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 76px;
-}
-.footer-second{
-    display: inline-block;
     margin-bottom: 16px;
+    display: inline-block;
 }
+
 .span{
     color: #ffffff;
 }
