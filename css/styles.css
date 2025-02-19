@@ -16,14 +16,18 @@ img{
 
 .header{
     border-bottom: 1px solid #e7e9fc ;
+    padding: 20px 0px;
 }
 .container{
-    display: flex;
     max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
     
-    flex-direction: column;
+}
+.header-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .header .container .navbar{
     display: flex;
@@ -101,6 +105,7 @@ a{
     letter-spacing: 0.02em;
     color: #ffffff;
     max-width: 496px;
+    margin: 0 auto;
 }
 .effective .service{
     display: block;
@@ -116,6 +121,7 @@ a{
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 .effective .service:hover{
